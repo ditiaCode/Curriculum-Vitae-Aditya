@@ -1,0 +1,457 @@
+<!-- NAMA   : ADITYA       -->
+<!-- NIM    : 221011401567 -->
+<!-- KELAS  : 05 TPLM 008  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curriculum Vitae Aditya</title>
+
+    <!-- ICON -->
+    <link rel="icon" href="img/Icon/aditya.png">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Merriweather", serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #f4f4f9;
+        }
+
+        #halaman {
+            min-height: 200px;
+            width: 60%;
+            min-width: 600px;
+            background: lemonchiffon;
+            margin: 50px auto;
+            padding: 30px;
+            color: #333;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .foto {
+            width: 15%;
+            min-width: 130px;
+            float: left;
+            margin-right: 20px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .kotak-info-kontak {
+            width: 70.9%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .nama {
+            margin-bottom: -5px;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .judul-pekerjaan {
+            display: inline-block;
+            font-size: 1.8em;
+            color: #555;
+        }
+
+        .detail-kontak {
+            background: darkslategray;
+            color: white;
+            text-align: center;
+            margin: auto;
+            margin-top: 25px;
+            padding: 10px;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+
+        #bio h3,
+        #pendidikan h3,
+        #pengalaman h3,
+        #biodata h3,
+        #keahlian h3,
+        #portfolio h3,
+        #sertifikat h3 {
+            border: 1px solid #ddd;
+            text-transform: uppercase;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 30px 0 10px;
+            background-color: #f9f9f9;
+        }
+
+        #bio p,
+        #pendidikan table td,
+        #pengalaman table td,
+        #biodata table td,
+        #keahlian ul,
+        #portfolio ul,
+        #sertifikat ul {
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        #pendidikan table tr.sekolah-1 td:first-child,
+        #pengalaman table tr.kerja-1 td:first-child,
+        #pengalaman table tr.kerja-2 td:first-child {
+            width: 120px;
+            color: #777;
+            padding-bottom: 25px;
+        }
+
+        #pendidikan table tr.sekolah-2 td:first-child,
+        #pengalaman table tr.kerja-1 td {
+            padding-bottom: 25px;
+        }
+
+        #biodata table tr td:first-child {
+            width: 200px;
+        }
+
+        #biodata table tr td:nth-child(2) {
+            width: 300px;
+        }
+
+        .me5 {
+            margin-right: 5px;
+        }
+
+        .portfolio-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-item img {
+            width: 400px;
+            height: 250px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .portfolio-item p {
+            margin-left: 10px;
+            font-size: xx-small
+        }
+
+        .keahlian-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .keahlian-item i {
+            margin-right: 10px;
+        }
+
+        .sertifikat-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .sertifikat-item img {
+            width: 400px;
+            height: 250px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        .sertifikat-item p {
+            margin-left: 10px;
+        }
+
+        .sosial-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .sosial-media a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding-top: 20px;
+            z-index: 1000;
+        }
+
+        .sidebar a {
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            color: #f2f2f2;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .sidebar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .content {
+            margin-left: 270px;
+            padding-top: 50px;
+            max-width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <a class="active" href="#"><i class="fas fa-home me5"></i> Beranda</a>
+        <a href="#bio"><i class="fas fa-user me5"></i> Bio</a>
+        <a href="#pendidikan"><i class="fas fa-graduation-cap me5"></i> Pendidikan</a>
+        <a href="#pengalaman"><i class="fas fa-briefcase me5"></i> Pengalaman</a>
+        <a href="#biodata"><i class="fas fa-id-card me5"></i> Biodata</a>
+        <a href="#keahlian"><i class="fas fa-tools me5"></i> Keahlian</a>
+        <a href="#portfolio"><i class="fas fa-briefcase me5"></i> Portfolio</a>
+        <a href="#sertifikat"><i class="fas fa-certificate me5"></i> Sertifikat</a>
+    </div>
+
+    <div id="halaman" class="content">
+        <div class="foto-dan-nama">
+            <img src="img/Icon/aditya.png" class="foto" alt="Foto Profil">
+            <div class="kotak-info-kontak">
+                <h1 class="nama">Aditya</h1>
+                <br>
+                <h3 class="judul-pekerjaan">IT SUPPORT & SEO</h3>
+                <p class="detail-kontak"><i class="fas fa-phone me5"></i> Telepon: +62 838-3703-4553 &nbsp; - &nbsp; <i class="fas fa-envelope me5"></i> Email: ditia000@gmail.com</p>
+            </div>
+        </div>
+        <div id="bio">
+            <h3><i class="fas fa-user me5"></i> Bio</h3>
+            <p>
+                Saya seorang mahasiswa Universitas Pamulang jurusan Teknik Informatika, saat ini sedang menempuh semester 5 dan saya bekerja sebagai IT Support dan SEO di <a target="_blank" href="https://g.co/kgs/F6ohzJH">Warung Komputer</a>.
+            </p>
+        </div>
+        <div id="pendidikan">
+            <h3><i class="fas fa-graduation-cap me5"></i> Pendidikan</h3>
+            <table>
+                <tr class="sekolah-1">
+                    <td>2010 - 2016</td>
+                    <td><b><a href="https://maps.app.goo.gl/zYgarAc3QBrJPTAo7" target="_blank">SDN Padarek 2</a></b></td>
+                </tr>
+                <tr class="sekolah-2">
+                    <td>2016 - 2019</td>
+                    <td><b><a href="https://maps.app.goo.gl/Mn3uTdvoWg51xFu27" target="_blank">SMPN 2 Lemahsugih</a></b></td>
+                </tr>
+                <tr class="sekolah-1">
+                    <td>2019 - 2022</td>
+                    <td><b><a href="https://maps.app.goo.gl/CUkABF6KvE7GTmLZA" target="_blank" class="me5">SMKN 1 Lemahsugih</a></b> Jurusan Rekayasa Perangkat Lunak (RPL)</td>
+                </tr>
+            </table>
+        </div>
+        <div id="pengalaman">
+            <h3><i class="fas fa-briefcase me5"></i> Pengalaman</h3>
+            <table>
+                <tr class="kerja-1">
+                    <td>1 Maret 2021 - 31 Mei 2021</td>
+                    <td><b>Spesialis Pengolahan Data & Teknisi - <a target="_blank" href="https://maps.app.goo.gl/y9hqNNo4VLzrrrku6">KPU Sumedang</a></b></td>
+                </tr>
+                <tr class="kerja-2">
+                    <td colspan="2">Pengalaman Praktek Kerja Lapangan (PKL) di <b>KPU Sumedang</b> sebagai Teknisi Maintenance & Repairman PC serta Sub Bagian Pengolahan Data, dengan tugas utama merekap data penduduk Kabupaten Sumedang.</td>
+                </tr>
+                <tr class="kerja-1">
+                    <td>3 Oktober 2022 - Sekarang</td>
+                    <td><b>IT Support & SEO - <a target="_blank" href="https://g.co/kgs/F6ohzJH">Warung Komputer</a></b></td>
+                </tr>
+                <tr class="kerja-2">
+                    <td colspan="2">Saya bekerja di <b>Warung Komputer</b> sebagai IT Support dan Search Engine Optimization (SEO) dengan pengalaman lebih dari 2 tahun. Tugas saya meliputi melayani berbagai kebutuhan teknis, mengoptimalkan website untuk meningkatkan jumlah pelanggan, serta melakukan maintenance PC atau laptop di berbagai instansi.</td>
+                </tr>
+            </table>
+        </div>
+        <div id="biodata">
+            <h3><i class="fas fa-id-card me5"></i> Biodata</h3>
+            <table>
+                <tr>
+                    <td><i class="fas fa-birthday-cake me5"></i> Tanggal Lahir:</td>
+                    <td><b>Majalengka, 24 September 2003</b></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-map-marker-alt me5"></i> Alamat:</td>
+                    <td> <a target="_blank" href="https://maps.app.goo.gl/AxX9gfQoUAV3aipA7"><b>Cikupa, Kec. Lemahsugih, Kab. Majalengka, Jawa Barat</b></a> </td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-phone me5"></i> Telepon:</td>
+                    <td><b>083837034553</b></td>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-envelope me5"></i> Email:</td>
+                    <td><b><a href="mailto:ditia000@gmail.com">ditia000@gmail.com</a></b></td>
+                </tr>
+            </table>
+        </div>
+        <div id="keahlian">
+            <h3><i class="fas fa-tools me5"></i> Keahlian</h3>
+            <ul>
+                <li class="keahlian-item"><i class="fa-brands fa-html5"></i> Hypertext Markup Language (HTML)</li>
+                <li class="keahlian-item"><i class="fa-brands fa-css3-alt"></i> Cascading Style Sheets (CSS)</li>
+                <li class="keahlian-item"><i class="fa-brands fa-js"></i> JavaScript</li>
+                <li class="keahlian-item"><i class="fa-brands fa-bootstrap"></i> Bootstrap 4 & 5</li>
+                <li class="keahlian-item"><i class="fa-solid fa-database"></i> Structured Query Language (MYSQL)</li>
+                <li class="keahlian-item"><i class="fa-brands fa-php"></i> Hypertext Preprocessor (PHP)</li>
+                <li class="keahlian-item"><i class="fa-solid fa-search"></i> Search Engine Optimization (SEO)</li>
+                <li class="keahlian-item"><i class="fa-solid fa-screwdriver-wrench"></i> IT Support</li>
+                <li class="keahlian-item"><i class="fa-solid fa-file-word"></i> Microsoft Office Word</li>
+                <li class="keahlian-item"><i class="fa-solid fa-file-excel"></i> Microsoft Office Excel</li>
+            </ul>
+        </div>
+        <div id="portfolio">
+            <h3><i class="fas fa-briefcase me5"></i> Portfolio</h3>
+            <ul>
+                <li class="portfolio-item">
+                    <div>
+                        <img src="img/Portfolio/Maintenance Laptop & AIO 66 Unit di Kementerian Perindustrian RI 1.jpg" alt="Maintenance Laptop & AIO 66 Unit di Kementerian Perindustrian RI">
+                        <p>Maintenance Laptop & AIO 66 Unit di <a href="https://g.co/kgs/zmH5dQd" target="_blank"> Kementerian Perindustrian RI </a></p>
+                    </div>
+                    <div>
+                        <img src="img/Portfolio/Maintenance Laptop & AIO 66 Unit di Kementerian Perindustrian RI 2.jpg" alt="Maintenance Laptop & AIO 66 Unit di Kementerian Perindustrian RI">
+                        <p>Maintenance Laptop & AIO 66 Unit di <a href="https://g.co/kgs/zmH5dQd" target="_blank"> Kementerian Perindustrian RI </a></p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <div>
+                        <img src="img/Portfolio/Maintenance di Kumparan.jpeg" alt="Maintenance di Kumparan">
+                        <p>Maintenance di <a href="https://g.co/kgs/GiVscLs" target="_blank"> Kumparan </a></p>
+                    </div>
+                    <div>
+                        <img src="img/Portfolio/Maintenance Mineski 2.jpg" alt="Maintenance Mineski">
+                        <p>Maintenance <a href="https://maps.app.goo.gl/KVMwNKGqAvnHcCEA8" target="_blank"> Mineski </a></p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <div>
+                        <img src="img/Portfolio/Maintenance laptop 10 unit di BNI.jpg" alt="Maintenance laptop 10 unit di BNI">
+                        <p>Maintenance laptop 10 unit di <a href="https://maps.app.goo.gl/hsTQx2DCNPQZ37mB8" target="_blank">PT Bank Negara Indonesia (BNI)</a></p>
+                    </div>
+                    <div>
+                        <img src="img/Portfolio/Maintenance PC & Laptop 33 unit di Yayasan Bakrie Amanah.jpg" alt="Maintenance PC & Laptop 33 unit di Yayasan Bakrie Amanah">
+                        <p>Maintenance PC & Laptop 33 unit di <a href="https://maps.app.goo.gl/JPXVjJEkDLui6nh47" target="_blank"> Yayasan Bakrie Amanah </a> </p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <div>
+                        <img src="img/Portfolio/Maintenance PC 7 Unit di PT Zhisheng Pacific Trading (Kantor Mixue Indonesia).jpg" alt="Maintenance PC 7 Unit di PT Zhisheng Pacific Trading (Kantor Mixue Indonesia)">
+                        <p>Maintenance PC 7 Unit di <a href="https://g.co/kgs/oFgi4DB" target="_blank"> PT Zhisheng Pacific Trading (Kantor Mixue Indonesia) </a></p>
+                    </div>
+                    <div>
+                        <img src="img/Portfolio/Maintenance Laptop & AIO 66 Unit di Kementerian Perindustrian RI 3.jpg" alt="Maintenance Laptop & AIO 66 Unit di Kementerian Perindustrian RI">
+                        <p>Maintenance Laptop & AIO 66 Unit di <a href="https://g.co/kgs/zmH5dQd" target="_blank"> Kementerian Perindustrian RI </a></p>
+                    </div>
+                </li>
+                <li class="portfolio-item">
+                    <div>
+                        <img src="img/Portfolio/Maintenance Laptop & AIO 66 Unit di Kementerian Perindustrian RI 4.jpg" alt="Maintenance Laptop & AIO 66 Unit di Kementerian Perindustrian RI">
+                        <p>Maintenance Laptop & AIO 66 Unit di <a href="https://g.co/kgs/zmH5dQd" target="_blank"> Kementerian Perindustrian RI </a></p>
+                    </div>
+                    <div>
+                        <img src="img/Portfolio/Maintenance Laptop & AIO 66 Unit di Kementerian Perindustrian RI 5.jpg" alt="Maintenance Laptop & AIO 66 Unit di Kementerian Perindustrian RI">
+                        <p>Maintenance Laptop & AIO 66 Unit di <a href="https://g.co/kgs/zmH5dQd" target="_blank"> Kementerian Perindustrian RI </a></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="sertifikat">
+            <h3><i class="fas fa-certificate me5"></i> Sertifikat</h3>
+            <ul>
+                <li class="sertifikat-item">
+                    <div>
+                        <img src="img/Sertifikat/html.jpg" alt="Sertifikat HTML">
+                        <p>Sertifikat HTML</p>
+                    </div>
+                    <div>
+                        <img src="img/Sertifikat/css.jpg" alt="Sertifikat CSS">
+                        <p>Sertifikat CSS</p>
+                    </div>
+                </li>
+                <li class="sertifikat-item">
+                    <div>
+                        <img src="img/Sertifikat/javascript.jpg" alt="Sertifikat JavaScript">
+                        <p>Sertifikat JavaScript</p>
+                    </div>
+                    <div>
+                        <img src="img/Sertifikat/php.jpg" alt="Sertifikat PHP">
+                        <p>Sertifikat PHP</p>
+                    </div>
+                </li>
+                <li class="sertifikat-item">
+                    <div>
+                        <img src="img/Sertifikat/MVC.jpg" alt="Sertifikat MVC">
+                        <p>Sertifikat MVC</p>
+                    </div>
+                    <div>
+                        <img src="img/Sertifikat/design.jpg" alt="Sertifikat Design">
+                        <p>Sertifikat Design</p>
+                    </div>
+                </li>
+                <li class="sertifikat-item">
+                    <div>
+                        <img src="img/Sertifikat/blockchain.jpg" alt="Sertifikat Blockchain">
+                        <p>Sertifikat Blockchain</p>
+                    </div>
+                    <div>
+                        <img src="img/Sertifikat/wordpress.jpg" alt="Sertifikat Wordpress">
+                        <p>Sertifikat Wordpress</p>
+                    </div>
+                </li>
+                <li class="sertifikat-item">
+                    <div>
+                        <img src="img/Sertifikat/Workshop.jpg" alt="Sertifikat Workshop">
+                        <p>Sertifikat Workshop</p>
+                    </div>
+                    <div>
+                        <img src="img/Sertifikat/Sertifikat PKL.jpg" alt="Sertifikat PKL">
+                        <p>Sertifikat PKL</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sosial-media">
+            <a href="https://www.facebook.com/ditia.ss" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=083837034553" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/@aftnchannels8101" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://github.com/ditiaCode" target="_blank"><i class="fab fa-github-alt"></i></a>
+            <a href="https://www.instagram.com/_ditia._/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/aditya-code-3b5372334/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/ditiaCode" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
